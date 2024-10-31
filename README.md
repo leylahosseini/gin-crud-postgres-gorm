@@ -10,3 +10,7 @@ curl -X PUT localhost:8080/users/:id -d '{"name":"test1" , "email":"test1@test.c
 curl -X DELETE localhost:8080/users/:id
 ###
 curl -X GET localhost:8080/users
+
+### 
+Support Swaggers in 
+localhost:8080/docs/index.html
