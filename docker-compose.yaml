@@ -1,0 +1,17 @@
+version: '3'  
+
+services:  
+  db:  
+    image: postgres:latest  
+    restart: always  
+    environment:  
+      POSTGRES_USER: leyla  
+      POSTGRES_PASSWORD: 123456  
+      POSTGRES_DB: Learning-golang  
+    volumes:  
+      - postgres_data:/var/lib/postgresql/data  
+    ports:  
+      - "5432:5432"  
+
+volumes:  
+  postgres_data:  
